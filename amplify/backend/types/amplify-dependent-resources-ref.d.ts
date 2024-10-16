@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "brand": {
+    "nolkPimBeBrand": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
@@ -8,13 +8,6 @@ export type AmplifyDependentResourcesAttributes = {
   },
   "function": {
     "NolkPimBeBrand": {
-      "Arn": "string",
-      "LambdaExecutionRole": "string",
-      "LambdaExecutionRoleArn": "string",
-      "Name": "string",
-      "Region": "string"
-    },
-    "NolkPimBeBrandJava": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",

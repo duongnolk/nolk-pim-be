@@ -1,6 +1,6 @@
 {
   "api": {
-    "brand": {
+    "nolkPimBeBrand": {
       "dependsOn": [
         {
           "attributes": [
@@ -17,12 +17,6 @@
   },
   "function": {
     "NolkPimBeBrand": {
-      "build": true,
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "NolkPimBeBrandJava": {
       "build": true,
       "dependsOn": [],
       "providerPlugin": "awscloudformation",

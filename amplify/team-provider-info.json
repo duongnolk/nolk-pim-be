@@ -15,16 +15,15 @@
       "function": {
         "NolkPimBeBrand": {
           "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
-          "s3Key": "amplify-builds/NolkPimBeBrand-432f697431306c4b4d77-build.zip",
+          "s3Key": "amplify-builds/NolkPimBeBrand-3041797268363162704c-build.zip",
           "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
           "dbName": "pim",
           "dbPass": "Nolk2024",
           "dbUser": "nolkadmin"
-        },
-        "NolkPimBeBrandJava": {}
+        }
       },
       "api": {
-        "brand": {}
+        "nolkPimBeBrand": {}
       }
     }
   },
