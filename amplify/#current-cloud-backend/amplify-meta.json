@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nolkpimbe-prod-9532a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nolkpimbe-prod-9532a-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-prod-9532a-unauthRole",
+      "StackName": "amplify-nolkpimbe-prod-9532a",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-prod-9532a/56d2f420-8b68-11ef-9190-12c687adaea9",
+      "AmplifyAppId": "d3jp64bf48m0es"
+    }
+  }
+}
