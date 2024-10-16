@@ -1,0 +1,56 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nolkpimbe-dev-87bcc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-dev-87bcc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-dev-87bcc-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-dev-87bcc-unauthRole",
+      "StackName": "amplify-nolkpimbe-dev-87bcc",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-dev-87bcc/a2dd9e20-8b67-11ef-8543-0e2da9294735",
+      "AmplifyAppId": "d3jp64bf48m0es"
+    },
+    "categories": {
+      "function": {
+        "NolkPimBeBrand": {
+          "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+          "s3Key": "amplify-builds/NolkPimBeBrand-3041797268363162704c-build.zip",
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin"
+        }
+      },
+      "api": {
+        "nolkPimBeBrand": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nolkpimbe-prod-9532a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nolkpimbe-prod-9532a-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-prod-9532a-unauthRole",
+      "StackName": "amplify-nolkpimbe-prod-9532a",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-prod-9532a/56d2f420-8b68-11ef-9190-12c687adaea9",
+      "AmplifyAppId": "d3jp64bf48m0es"
+    }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nolkpimbe-test-f769b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nolkpimbe-test-f769b-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-test-f769b-unauthRole",
+      "StackName": "amplify-nolkpimbe-test-f769b",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-test-f769b/d6be4c70-8b68-11ef-85ad-0e6439c318a7",
+      "AmplifyAppId": "d3jp64bf48m0es"
+    }
+  }
+}
