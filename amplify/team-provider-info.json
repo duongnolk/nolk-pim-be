@@ -38,6 +38,11 @@
       "StackName": "amplify-nolkpimbe-prod-9532a",
       "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-prod-9532a/56d2f420-8b68-11ef-9190-12c687adaea9",
       "AmplifyAppId": "d3jp64bf48m0es"
+    },
+    "categories": {
+      "function": {
+        "NolkPimBeBrand": {}
+      }
     }
   },
   "test": {

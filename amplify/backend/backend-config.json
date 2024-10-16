@@ -22,55 +22,5 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
-  },
-  "parameters": {
-    "AMPLIFY_function_NolkPimBeBrand_dbHost": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    },
-    "AMPLIFY_function_NolkPimBeBrand_dbName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    },
-    "AMPLIFY_function_NolkPimBeBrand_dbPass": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    },
-    "AMPLIFY_function_NolkPimBeBrand_dbUser": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    },
-    "AMPLIFY_function_NolkPimBeBrand_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    },
-    "AMPLIFY_function_NolkPimBeBrand_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "NolkPimBeBrand"
-        }
-      ]
-    }
   }
 }
