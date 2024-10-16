@@ -199,10 +199,10 @@
         }
       }
     },
-    "apinolkPimBeBrand": {
+    "apinolkpimbe": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/api/nolkPimBeBrand-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/api/nolkpimbe-cloudformation-template.json",
         "Parameters": {
           "functionNolkPimBeBrandName": {
             "Fn::GetAtt": [
@@ -216,6 +216,30 @@
               "Outputs.Arn"
             ]
           },
+          "functionNolkPimBeSkuName": {
+            "Fn::GetAtt": [
+              "functionNolkPimBeSku",
+              "Outputs.Name"
+            ]
+          },
+          "functionNolkPimBeSkuArn": {
+            "Fn::GetAtt": [
+              "functionNolkPimBeSku",
+              "Outputs.Arn"
+            ]
+          },
+          "functionNolkPimBeBundleName": {
+            "Fn::GetAtt": [
+              "functionNolkPimBeBundle",
+              "Outputs.Name"
+            ]
+          },
+          "functionNolkPimBeBundleArn": {
+            "Fn::GetAtt": [
+              "functionNolkPimBeBundle",
+              "Outputs.Arn"
+            ]
+          },
           "env": "dev"
         }
       }
@@ -226,11 +250,41 @@
         "TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeBrand-cloudformation-template.json",
         "Parameters": {
           "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
-          "s3Key": "amplify-builds/NolkPimBeBrand-3041797268363162704c-build.zip",
+          "s3Key": "amplify-builds/NolkPimBeBrand-4b43796d377645417653-build.zip",
           "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
           "dbName": "pim",
           "dbPass": "Nolk2024",
           "dbUser": "nolkadmin",
+          "env": "dev"
+        }
+      }
+    },
+    "functionNolkPimBeBundle": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeBundle-cloudformation-template.json",
+        "Parameters": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin",
+          "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+          "s3Key": "amplify-builds/NolkPimBeBundle-7143554c2f4853426653-build.zip",
+          "env": "dev"
+        }
+      }
+    },
+    "functionNolkPimBeSku": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeSku-cloudformation-template.json",
+        "Parameters": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin",
+          "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+          "s3Key": "amplify-builds/NolkPimBeSku-6a54356f79784e7a6566-build.zip",
           "env": "dev"
         }
       }

@@ -15,15 +15,31 @@
       "function": {
         "NolkPimBeBrand": {
           "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
-          "s3Key": "amplify-builds/NolkPimBeBrand-3041797268363162704c-build.zip",
+          "s3Key": "amplify-builds/NolkPimBeBrand-4b43796d377645417653-build.zip",
           "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
           "dbName": "pim",
           "dbPass": "Nolk2024",
           "dbUser": "nolkadmin"
+        },
+        "NolkPimBeBundle": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin",
+          "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+          "s3Key": "amplify-builds/NolkPimBeBundle-7143554c2f4853426653-build.zip"
+        },
+        "NolkPimBeSku": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin",
+          "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+          "s3Key": "amplify-builds/NolkPimBeSku-6a54356f79784e7a6566-build.zip"
         }
       },
       "api": {
-        "nolkPimBeBrand": {}
+        "nolkpimbe": {}
       }
     }
   },
@@ -38,6 +54,22 @@
       "StackName": "amplify-nolkpimbe-prod-9532a",
       "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-prod-9532a/56d2f420-8b68-11ef-9190-12c687adaea9",
       "AmplifyAppId": "d3jp64bf48m0es"
+    },
+    "categories": {
+      "function": {
+        "NolkPimBeSku": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin"
+        },
+        "NolkPimBeBundle": {
+          "dbHost": "nolk-pim.cumwwkkaaunx.us-east-1.rds.amazonaws.com",
+          "dbName": "pim",
+          "dbPass": "Nolk2024",
+          "dbUser": "nolkadmin"
+        }
+      }
     }
   },
   "test": {
