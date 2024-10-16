@@ -51,6 +51,11 @@
       "StackName": "amplify-nolkpimbe-test-f769b",
       "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-test-f769b/d6be4c70-8b68-11ef-85ad-0e6439c318a7",
       "AmplifyAppId": "d3jp64bf48m0es"
+    },
+    "categories": {
+      "function": {
+        "NolkPimBeBrand": {}
+      }
     }
   }
 }

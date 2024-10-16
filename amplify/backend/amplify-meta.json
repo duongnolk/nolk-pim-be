@@ -1,14 +1,14 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-nolkpimbe-prod-9532a-authRole",
-      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-prod-9532a-authRole",
+      "AuthRoleName": "amplify-nolkpimbe-test-f769b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-nolkpimbe-prod-9532a-deployment",
-      "UnauthRoleName": "amplify-nolkpimbe-prod-9532a-unauthRole",
-      "StackName": "amplify-nolkpimbe-prod-9532a",
-      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-prod-9532a/56d2f420-8b68-11ef-9190-12c687adaea9",
+      "DeploymentBucketName": "amplify-nolkpimbe-test-f769b-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-test-f769b-unauthRole",
+      "StackName": "amplify-nolkpimbe-test-f769b",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-test-f769b/d6be4c70-8b68-11ef-85ad-0e6439c318a7",
       "AmplifyAppId": "d3jp64bf48m0es"
     }
   },
