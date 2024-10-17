@@ -368,7 +368,7 @@
         "Name": "nolkPimBeBrand"
       }
     },
-    "nolkPimBeBrandDefault4XXResponse6aea599c": {
+    "nolkPimBeBrandDefault4XXResponse97dab148": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseParameters": {
@@ -383,7 +383,7 @@
         }
       }
     },
-    "nolkPimBeBrandDefault5XXResponse6aea599c": {
+    "nolkPimBeBrandDefault5XXResponse97dab148": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseParameters": {
@@ -398,7 +398,7 @@
         }
       }
     },
-    "DeploymentAPIGWnolkPimBeBranddddf5c03": {
+    "DeploymentAPIGWnolkPimBeBrand140b740c": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "Description": "The Development stage deployment of your API.",
@@ -416,8 +416,8 @@
         }
       },
       "DependsOn": [
-        "nolkPimBeBrandDefault4XXResponse6aea599c",
-        "nolkPimBeBrandDefault5XXResponse6aea599c"
+        "nolkPimBeBrandDefault4XXResponse97dab148",
+        "nolkPimBeBrandDefault5XXResponse97dab148"
       ]
     }
   }

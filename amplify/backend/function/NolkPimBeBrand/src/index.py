@@ -13,6 +13,7 @@ SECRET_ARN = 'arn:aws:secretsmanager:region:account-id:secret:your-db-secret'
 DATABASE_NAME = 'your-database-name'
 
 def handler(event, context):
+    try:
     # conn = psycopg2.connect(
     #     host=os.environ['DB_HOST'],
     #     database=os.environ['DB_NAME'],
@@ -20,27 +21,27 @@ def handler(event, context):
     #     password=os.environ['DB_PASS'],
     #     port=5432,
     # )
-    sql_query = "SELECT * FROM pim_prod.brand limit 10"
-     response = client.execute_statement(
-            resourceArn=DB_CLUSTER_ARN,
-            secretArn=SECRET_ARN,
-            database=DATABASE_NAME,
-            sql=sql_query
-        )
- # Process the results
-    records = response['records']
-    result = []
-    for record in records:
-            result.append({
-                'column1': record[0]['stringValue'],
-                'column2': record[1]['stringValue']
-            })
-        
-     # Return results
+        sql_query = "SELECT * FROM pim_prod.brand limit 10"
+        response = client.execute_statement(
+                resourceArn=DB_CLUSTER_ARN,
+                secretArn=SECRET_ARN,
+                database=DATABASE_NAME,
+                sql=sql_query
+            )
+        # Process the results
+        records = response['records']
+        result = []
+        for record in records:
+                result.append({
+                    'column1': record[0]['stringValue'],
+                    'column2': record[1]['stringValue']
+                })
+            
+        # Return results
         return {
-            'statusCode': 200,
-            'body': json.dumps(result)
-        }
+                'statusCode': 200,
+                'body': json.dumps(result)
+            }
 
     except Exception as e:
         print(e)
