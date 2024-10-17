@@ -1,6 +1,7 @@
 {
   "providers": {
     "awscloudformation": {
+<<<<<<< HEAD
       "AuthRoleName": "amplify-nolkpimbe-test-f769b-authRole",
       "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-unauthRole",
       "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-test-f769b-authRole",
@@ -9,7 +10,143 @@
       "UnauthRoleName": "amplify-nolkpimbe-test-f769b-unauthRole",
       "StackName": "amplify-nolkpimbe-test-f769b",
       "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-test-f769b/d6be4c70-8b68-11ef-85ad-0e6439c318a7",
+=======
+      "AuthRoleName": "amplify-nolkpimbe-dev-87bcc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-dev-87bcc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876240587467:role/amplify-nolkpimbe-dev-87bcc-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+      "UnauthRoleName": "amplify-nolkpimbe-dev-87bcc-unauthRole",
+      "StackName": "amplify-nolkpimbe-dev-87bcc",
+      "StackId": "arn:aws:cloudformation:us-east-1:876240587467:stack/amplify-nolkpimbe-dev-87bcc/a2dd9e20-8b67-11ef-8543-0e2da9294735",
+>>>>>>> ebeb7771bbb3490ce827ae26ffa285fceab4f94c
       "AmplifyAppId": "d3jp64bf48m0es"
+    }
+  },
+  "api": {
+    "nolkpimbe": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/api/nolkpimbe-cloudformation-template.json",
+        "logicalId": "apinolkpimbe"
+      },
+      "lastPushTimeStamp": "2024-10-16T20:18:13.521Z",
+      "output": {
+        "ApiName": "nolkpimbe",
+        "RootUrl": "https://cuzvx42iyd.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "cuzvx42iyd"
+      },
+      "lastPushDirHash": "ni+e+sL0amZSgHKzOAwkjY7+z8w="
+    }
+  },
+  "function": {
+    "NolkPimBeBrand": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::876240587467:role/nolkpimbeLambdaRole9d75f70c-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:876240587467:function:NolkPimBeBrand-dev",
+        "Name": "NolkPimBeBrand-dev",
+        "LambdaExecutionRole": "nolkpimbeLambdaRole9d75f70c-dev"
+      },
+      "lastPushTimeStamp": "2024-10-16T20:18:12.540Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeBrand-cloudformation-template.json",
+        "logicalId": "functionNolkPimBeBrand"
+      },
+      "lastBuildTimeStamp": "2024-10-16T20:02:46.485Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-10-16T20:02:50.222Z",
+      "distZipFilename": "NolkPimBeBrand-4b43796d377645417653-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+        "s3Key": "amplify-builds/NolkPimBeBrand-4b43796d377645417653-build.zip"
+      },
+      "lastPushDirHash": "Wtq5Tz3+VKq1J7edvHv5Dr9uRnE="
+    },
+    "NolkPimBeBundle": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-10-16T20:02:07.754Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-10-16T20:02:11.477Z",
+      "distZipFilename": "NolkPimBeBundle-7143554c2f4853426653-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+        "s3Key": "amplify-builds/NolkPimBeBundle-7143554c2f4853426653-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeBundle-cloudformation-template.json",
+        "logicalId": "functionNolkPimBeBundle"
+      },
+      "lastPushTimeStamp": "2024-10-16T20:18:12.554Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::876240587467:role/nolkpimbeLambdaRole73164a07-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:876240587467:function:NolkPimBeBundle-dev",
+        "Name": "NolkPimBeBundle-dev",
+        "LambdaExecutionRole": "nolkpimbeLambdaRole73164a07-dev"
+      },
+      "lastPushDirHash": "buJUPq+dwTgOpxOzNqyOVuEm8r4="
+    },
+    "NolkPimBeSku": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-10-16T20:02:30.963Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-10-16T20:02:34.741Z",
+      "distZipFilename": "NolkPimBeSku-6a54356f79784e7a6566-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nolkpimbe-dev-87bcc-deployment",
+        "s3Key": "amplify-builds/NolkPimBeSku-6a54356f79784e7a6566-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nolkpimbe-dev-87bcc-deployment/amplify-cfn-templates/function/NolkPimBeSku-cloudformation-template.json",
+        "logicalId": "functionNolkPimBeSku"
+      },
+      "lastPushTimeStamp": "2024-10-16T20:18:12.562Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::876240587467:role/nolkpimbeLambdaRolec2fac4e8-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:876240587467:function:NolkPimBeSku-dev",
+        "Name": "NolkPimBeSku-dev",
+        "LambdaExecutionRole": "nolkpimbeLambdaRolec2fac4e8-dev"
+      },
+      "lastPushDirHash": "2eFCLvUS1w+XYfBfxxpYge/cM18="
     }
   }
 }

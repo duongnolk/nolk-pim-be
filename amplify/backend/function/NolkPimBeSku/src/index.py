@@ -14,7 +14,7 @@ def handler(event, context):
     cursor = conn.cursor()
     try:
         # Example query
-        cursor.execute("SELECT * FROM pim_prod.brand")
+        cursor.execute("SELECT * FROM pim_prod.import_sku limit 15")
         rows = cursor.fetchall()
         # Get the column names from cursor description
         column_names = [desc[0] for desc in cursor.description]

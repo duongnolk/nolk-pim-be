@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "paths": {
+    "/brand": {
+      "name": "/brand",
+      "lambdaFunction": "NolkPimBeBrand",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/sku": {
+      "name": "/sku",
+      "lambdaFunction": "NolkPimBeSku",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/bundle": {
+      "name": "/bundle",
+      "lambdaFunction": "NolkPimBeBundle",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

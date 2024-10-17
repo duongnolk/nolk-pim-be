@@ -1,5 +1,9 @@
 {
   "projectPath": "E:\\nolk-pim-be",
   "defaultEditor": "vscode",
+<<<<<<< HEAD
   "envName": "test"
+=======
+  "envName": "dev"
+>>>>>>> ebeb7771bbb3490ce827ae26ffa285fceab4f94c
 }

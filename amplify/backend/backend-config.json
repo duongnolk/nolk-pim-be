@@ -1,6 +1,6 @@
 {
   "api": {
-    "nolkPimBeBrand": {
+    "nolkpimbe": {
       "dependsOn": [
         {
           "attributes": [
@@ -9,6 +9,22 @@
           ],
           "category": "function",
           "resourceName": "NolkPimBeBrand"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -21,6 +37,164 @@
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "NolkPimBeBundle": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "NolkPimBeSku": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_NolkPimBeBrand_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBrand_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBrand_dbPass": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBrand_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBrand_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBrand_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBrand"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_dbPass": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeBundle_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeBundle"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_dbPass": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
+    },
+    "AMPLIFY_function_NolkPimBeSku_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "NolkPimBeSku"
+        }
+      ]
     }
   }
 }
